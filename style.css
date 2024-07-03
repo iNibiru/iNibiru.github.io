@@ -1,0 +1,97 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: #9DC0BC;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.CV {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.leftSide, .rightSide {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.leftSide h2, .rightSide h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.leftSide ul, .rightSide ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+
+.leftSide li, .rightSide li {
+    margin-bottom: 10px;
+}
+
+.leftSide .profile-pic {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #7C7287;
+    color: #fff;
+}
+
