@@ -1,8 +1,11 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
 }
 
 body {
@@ -11,13 +14,15 @@ body {
     color: #333;
     line-height: 1.6;
     text-align: center;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     background-color: #9DC0BC;
     color: #fff;
-    padding: 20px 0;
+    padding: 15px;
+    margin: 0;
 }
 
 header h1 {
@@ -46,6 +51,7 @@ nav ul li a:hover {
 }
 
 main {
+    flex: 1;
     margin-top: 20px;
 }
 
@@ -62,6 +68,10 @@ main {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .leftSide h2, .rightSide h2 {
@@ -71,7 +81,7 @@ main {
 
 .leftSide ul, .rightSide ul {
     list-style-type: none;
-    text-align: left;
+    text-align: center;
     padding: 0;
 }
 
@@ -94,4 +104,3 @@ footer {
     background-color: #7C7287;
     color: #fff;
 }
-
