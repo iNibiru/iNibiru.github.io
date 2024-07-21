@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV MauricioMM</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <h1>Mauricio Moreno Martinez</h1>
+        <button class="menu-btn"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></button>
     </header>
     <nav>
-        <ul>
+        <ul class="menu">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Sobre mí</a></li>
             <li><a href="#">Proyectos</a></li>
@@ -61,9 +63,37 @@
             <h2>Hola, Profe Martin!</h2>
             <p>Esta es mi página de inicio en GitHub.</p>
         </section>
+        <section>
+            <h2>Hola, Profe Martin!</h2>
+            <p>Esta es mi página de inicio en GitHub.</p>
+        </section>
+        <section>
+            <h2>Hola, Profe Martin!</h2>
+            <p>Esta es mi página de inicio en GitHub.</p>
+        </section>
+        <section>
+            <h2>Hola, Profe Martin!</h2>
+            <p>Esta es mi página de inicio en GitHub.</p>
+        </section>
+        <section>
+            <h2>Hola, Profe Martin!</h2>
+            <p>Esta es mi página de inicio en GitHub.</p>
+        </section>
+        
     </main>
     <footer>
         <p>&copy; 2024 Mauricio Moreno Martinez. Todos los derechos reservados.</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.querySelector('.menu-btn');
+            const menu = document.querySelector('nav ul');
+
+            menuBtn.addEventListener('click', function() {
+                menu.classList.toggle('active');
+            });
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/c572c8491f.js" crossorigin="anonymous"></script>
 </body>
 </html>
