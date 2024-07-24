@@ -143,7 +143,7 @@ main {
 
 .leftSide .profile-pic {
     width: 100%;
-    max-width: 150px;
+    max-width: 180px;
     height: auto;
     border-radius: 50%;
     display: block;
@@ -163,7 +163,7 @@ main {
 
 .galeria_fondo_gris section
 {
-    height: 250px;
+    height: 350px;
     margin: auto;
     display: flex;
     width: 100%;
@@ -202,6 +202,12 @@ main {
     font-style: normal;
 
       
+}
+
+.info li img
+
+{
+    max-width: 80px;
 }
 
 main h3
@@ -265,6 +271,15 @@ iframe, img {
     font-style: normal;
     font-size: 40px;
     font-weight: bold;
+    text-align: center;
+    
+}
+
+.about-me p {
+    font-family: "Indie Flower", cursive;
+    font-weight: normal;
+    font-style: normal;
+    text-align: justify;
     
 }
 
