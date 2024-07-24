@@ -15,12 +15,16 @@
     <nav>
         <ul class="menu">
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre mí</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
             <li><a href="#">Proyectos</a></li>
             <li><a href="#">Contacto</a></li>
         </ul>
     </nav>
     <main>
+        <h3>
+            INICIO
+        </h3>
+
         <div class="CV">
             <div class="leftSide">
                 <img src="https://th.bing.com/th/id/R.cf710a05c6e3ec6bd4026c238c99d9d7?rik=4TpDQ75Topzxnw&riu=http%3a%2f%2fstatic.sticker.ly%2fsticker_pack%2f13279e882d3a25af%2fPPB4TK%2f6%2f06b09c85-2072-42b3-afcd-f667897c6c73.png&ehk=t%2btos%2fODUvwhpaTt12bh848oIzY9uJ01v8WDrP3FNpk%3d&risl=&pid=ImgRaw&r=0" alt="Foto de Mauricio" class="profile-pic">
@@ -59,6 +63,23 @@
                 </ul>
             </div>
         </div>
+        
+            <div class="galeria_fondo_gris">
+                <section>
+                    <img src="https://images.contentstack.io/v3/assets/blt187521ff0727be24/blt5b5f65111350c8f7/60ee0bd543739d6620a572dc/bilgewater-the-slaughter-docks.jpg">
+                    <img src="https://images.contentstack.io/v3/assets/blt187521ff0727be24/blt96b7d18c55000dc0/60ee0bbd39cbdb45e8c47fe4/bilgewater-high-and-dry.jpg">
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/jQQ3H_IZDhQ?si=l4HfsfsDlWOTNoZq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <img src="https://images.contentstack.io/v3/assets/blt187521ff0727be24/bltaa8b3dff8ce12b09/60ee0bc95eda9722617c571a/bilgewater_serpentisles_03.jpg">
+                    <img src="https://images.contentstack.io/v3/assets/blt187521ff0727be24/blt81671b41e69cf391/60ee0bb4fde37d4c039e4393/bilgewater-bilgewater-bay.jpg">
+                </section>
+            </div>
+
+        <section id="sobre-mi" class="about-me">
+            <h2>Sobre mí</h2>
+            <p>Soy Mauricio Moreno Martinez, un apasionado desarrollador web con experiencia en el diseño y desarrollo de aplicaciones web. Desde temprana edad, me he sentido atraído por la tecnología y la informática, lo que me llevó a estudiar Informática en la Universidad UPSRJ. Durante mi carrera, he adquirido conocimientos sólidos en varios lenguajes de programación y frameworks, que me permiten crear soluciones eficientes y escalables.</p>
+            <p>Actualmente, trabajo en BIMBO como desarrollador web, donde aplico mis habilidades para mejorar la presencia digital de la empresa y optimizar sus plataformas online. Además, me mantengo en constante aprendizaje, explorando nuevas tecnologías y metodologías para seguir creciendo profesionalmente.</p>
+            <p>Fuera del ámbito profesional, disfruto de actividades como el senderismo, la lectura y la programación de proyectos personales que me permiten seguir desafiándome y aprendiendo nuevas habilidades.</p>
+        </section>
         <section>
             <h2>Hola, Profe Martin!</h2>
             <p>Esta es mi página de inicio en GitHub.</p>
@@ -71,9 +92,18 @@
         document.addEventListener('DOMContentLoaded', function() {
             const menuBtn = document.querySelector('.menu-btn');
             const menu = document.querySelector('nav ul');
+            const menuItems = document.querySelectorAll('nav ul li a');
 
             menuBtn.addEventListener('click', function() {
                 menu.classList.toggle('active');
+            });
+
+            menuItems.forEach(function(item) {
+                item.addEventListener('click', function() {
+                    if (window.innerWidth <= 868) {
+                        menu.classList.remove('active');
+                    }
+                });
             });
         });
     </script>
