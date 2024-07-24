@@ -143,8 +143,8 @@ main {
 
 .leftSide .profile-pic {
     width: 100%;
-    max-width: 180px;
-    height: auto;
+    max-width: 250px;
+    height: 250px;
     border-radius: 50%;
     display: block;
     margin: 0 auto 20px auto;
@@ -188,6 +188,26 @@ main {
     opacity: 1;
     filter: contrast(130%);
 }   
+
+.logos
+{
+    display: flex;
+    justify-content: center;
+}
+
+.logos img
+{
+    max-width: 250px;
+}
+
+.logos a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.logos a:hover {
+    transform: scale(1.2);
+}
 
 .section
 {
@@ -271,9 +291,12 @@ iframe, img {
     font-style: normal;
     font-size: 40px;
     font-weight: bold;
+    display: block;
     text-align: center;
+
     
 }
+
 
 .about-me p {
     font-family: "Indie Flower", cursive;
@@ -283,12 +306,97 @@ iframe, img {
     
 }
 
+
+
+.proyectos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 40px;
+    height: auto;
+}
+
+.leftProyectos {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #9DC0BC;
+    border-top: 2px solid #9DC0BC;
+}
+
+.rightProyectos
+{
+    display: flex;
+    width: 65%;
+    flex-direction: column;
+}
+
+.intoTheDark, .paginaHTML, .juegoUnity {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #9DC0BC;
+    border-top: 2px solid #9DC0BC;
+    
+}
+
+ .intoTheDark .galeria_fondo_gris img
+{
+    max-width: 100%;
+}
+
+.intoTheDark .galeria_fondo_gris img:hover
+{
+    width: 65%;
+    height: auto;
+    opacity: 1;
+    filter: contrast(130%);
+}   
+
+.paginaHTML .galeria_fondo_gris img:hover
+{
+    width: 65%;
+    height: auto;
+    opacity: 1;
+    filter: contrast(130%);
+}   
+.paginaHTML .galeria_fondo_gris img
+{
+    max-width: 100%;
+}
+
+.juegoUnity .galeria_fondo_gris img:hover
+{
+    width: 65%;
+    height: auto;
+    opacity: 1;
+    filter: contrast(130%);
+}   
+.juegoUnity .galeria_fondo_gris img
+{
+    max-width: 100%;
+}
+
+
+
 footer {
     margin-top: 20px;
     padding: 10px 0;
     background-color: #7C7287;
     color: #fff;
 }
+
+
 
 @media (max-width: 868px) {
     .menu-btn {
@@ -334,10 +442,68 @@ footer {
         align-items: center;
     }
 
-    .leftSide, .rightSide {
-        width: 80%;
-        margin-bottom: 20px;
-        border-bottom: 2px solid #9DC0BC;
+
+
+    .proyectos {
+        flex-direction: column;
+        align-items: center;
     }
 
+    .rightProyectos, .leftProyectos
+    {
+        width: 80%;
+    }
+
+    .intoTheDark .galeria_fondo_gris img
+    {
+        height: 200px;
+        max-width: 100%;
+    }
+    
+    .intoTheDark .galeria_fondo_gris
+    {
+        height: 220px;
+    }
+    
+    .intoTheDark .galeria_fondo_gris img:hover
+    {
+        width: 65%;
+        height: 55%;
+        opacity: 1;
+        filter: contrast(130%);
+    }   
+
+    .paginaHTML .galeria_fondo_gris 
+    {
+        height: 220px;
+    }
+    .paginaHTML .galeria_fondo_gris img
+    {
+        height: 200px;
+        max-width: 100%;
+    }
+    .paginaHTML .galeria_fondo_gris img:hover
+    {
+        width: 65%;
+        height: 55%;
+        opacity: 1;
+        filter: contrast(130%);
+    }
+
+    .juegoUnity .galeria_fondo_gris 
+    {
+        height: 220px;
+    }
+    .juegoUnity .galeria_fondo_gris img
+    {
+        height: 200px;
+        max-width: 100%;
+    }
+    .juegoUnity .galeria_fondo_gris img:hover
+    {
+        width: 65%;
+        height: 55%;
+        opacity: 1;
+        filter: contrast(130%);
+    }
 }
